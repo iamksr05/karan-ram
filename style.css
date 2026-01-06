@@ -193,7 +193,7 @@ p {
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 16px;
     text-align: center;
-    position: relative;
+    /* position: relative; */
     overflow: hidden;
     transition:
         transform 0.35s ease,
@@ -218,7 +218,6 @@ p {
 }
 
 
-/* Modern skill card hover animation */
 .skill-card::before {
     content: "";
     position: absolute;
@@ -249,13 +248,15 @@ p {
 
 .skill-card:hover p {
     opacity: 1;
-    transform: translateY(-50px);
+    transform: translateY(-55px);
 }
 
 .skill-card-section {
     display: grid;
     grid-template-columns: 4fr 4fr 4fr;
+    justify-items: center;
     column-gap: 70px;
     row-gap: 40px;
     margin-top: 70px;
 }
+
