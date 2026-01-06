@@ -1,6 +1,8 @@
 body {
     background-color: #000000;
     color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 header {
@@ -33,7 +35,8 @@ header {
 }
 
 .about {
-    width: 1300px;
+    max-width: 1300px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -154,7 +157,8 @@ header {
 }
 
 .skills {
-    width: 1300px;
+    max-width: 1300px;
+    width: 100%;
     margin: 0 auto;
 }
 
