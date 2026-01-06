@@ -260,3 +260,17 @@ p {
     margin-top: 70px;
 }
 
+.projects {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.project-detail {
+    padding: 100px 100px 30px 100px;
+    text-align: center;
+}
+
+.project-info {
+    padding: 30px;
+}
