@@ -22,11 +22,29 @@ header {
 .home {
     display: flex;
     justify-content: space-around;
-    margin-top: 180px;
+    /* Min-height ensures it covers the viewport minus header/padding on tall screens */
+    min-height: calc(100vh - 120px);
+    align-items: flex-end;
+    /* Pushes content (image) to bottom */
+}
+
+/* Container for the text needs to stay centered vertically mostly, 
+   or allow it to float, but we want the text to be comfortable. 
+   Since proper structure is .home > div > .hello, we might need a selector 
+   for that specific div if it doesn't have a class. 
+   However, .hello is the class on the inner div. 
+   Let's target the direct child div of .home that holds .hello if possible, 
+   or just modify .hello spacing.
+*/
+
+.home>div:first-child {
+    align-self: center;
+    /* keep text centered vertically while image is at bottom */
+    margin-bottom: 90px;
 }
 
 .hello {
-    margin-top: 150px;
+    /* removed large margin-top since we are using flex align */
     color: rgb(163, 149, 149);
     font-size: 25px;
 }
@@ -66,6 +84,7 @@ header {
     display: flex;
     justify-content: center;
 }
+
 .card-frame {
     padding: 30px;
     width: 380px;
@@ -190,14 +209,14 @@ p {
     text-align: center;
 }
 
-.skill-card h3{
+.skill-card h3 {
     font-weight: bold;
     font-size: 22px;
     opacity: 1;
     transition: all 0.3s ease;
 }
 
-.skill-card:hover h3{
+.skill-card:hover h3 {
     font-weight: bold;
     font-size: 22px;
     transform: translateY(-40px);
@@ -213,7 +232,7 @@ p {
     opacity: 0;
     transform: translateY(40px);
     transition: 0.3s ease;
-    transition: 
+    transition:
         opacity 0.3s ease 0.15s,
         transform 0.3s ease-out 0.15s;
 }
@@ -230,6 +249,7 @@ p {
     /* box-shadow: 0 20px 40px rgba(83, 81, 81, 0.5); */
     box-shadow: 0px 0px 10px rgb(147, 143, 143);
 }
+
 .skill-card-section {
     display: grid;
     grid-template-columns: 4fr 4fr 4fr;
@@ -237,4 +257,3 @@ p {
     row-gap: 40px;
     margin-top: 70px;
 }
-
