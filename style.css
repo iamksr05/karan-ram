@@ -1,6 +1,7 @@
 body {
     background-color: #000000;
     color: #ffffff;
+    padding-top: 120px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -12,6 +13,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(50px);
     z-index: 10;
 }
