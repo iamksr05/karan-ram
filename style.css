@@ -22,29 +22,17 @@ header {
 .home {
     display: flex;
     justify-content: space-around;
-    /* Min-height ensures it covers the viewport minus header/padding on tall screens */
-    min-height: calc(100vh - 120px);
+    min-height: calc(100vh - 100px);
     align-items: flex-end;
-    /* Pushes content (image) to bottom */
 }
 
-/* Container for the text needs to stay centered vertically mostly, 
-   or allow it to float, but we want the text to be comfortable. 
-   Since proper structure is .home > div > .hello, we might need a selector 
-   for that specific div if it doesn't have a class. 
-   However, .hello is the class on the inner div. 
-   Let's target the direct child div of .home that holds .hello if possible, 
-   or just modify .hello spacing.
-*/
 
 .home>div:first-child {
     align-self: center;
-    /* keep text centered vertically while image is at bottom */
     margin-bottom: 90px;
 }
 
 .hello {
-    /* removed large margin-top since we are using flex align */
     color: rgb(163, 149, 149);
     font-size: 25px;
 }
@@ -199,55 +187,69 @@ p {
 
 .skill-card {
     width: 300px;
-    height: 70px;
-    padding: 20px;
-    background: #111;
-    border: 0.5px solid rgb(48, 46, 46);
-    border-radius: 14px;
-    overflow: hidden;
-    transition: 0.3s ease;
+    height: 90px;
+    padding: 22px;
+    background: linear-gradient(180deg, #0f0f0f, #151515);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
 }
 
 .skill-card h3 {
-    font-weight: bold;
+    margin-top: 8px;
+    font-weight: 600;
     font-size: 22px;
+    transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+
+.skill-card p {
+    font-size: 14px;
+    line-height: 24px;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+
+/* Modern skill card hover animation */
+.skill-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        circle at top,
+        rgba(255, 255, 255, 0.12),
+        transparent 60%
+    );
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px) scale(1.04);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+.skill-card:hover::before {
     opacity: 1;
-    transition: all 0.3s ease;
 }
 
 .skill-card:hover h3 {
-    font-weight: bold;
-    font-size: 22px;
-    transform: translateY(-40px);
-    overflow: hidden;
-    opacity: 0;
-}
-
-.skill-card p {
-    color: rgb(206, 203, 203);
-    font-size: 14px;
-    line-height: 25px;
-
-    opacity: 0;
-    transform: translateY(40px);
-    transition: 0.3s ease;
-    transition:
-        opacity 0.3s ease 0.15s,
-        transform 0.3s ease-out 0.15s;
+    transform: translateY(-60px);
+    opacity: 0.85;
 }
 
 .skill-card:hover p {
     opacity: 1;
-    transform: translateY(-40px);
-}
-
-.skill-card:hover {
-    height: 100px;
-    border: 1px solid rgb(28, 27, 27);
-    transform: translateY(-8px) scale(1.04);
-    /* box-shadow: 0 20px 40px rgba(83, 81, 81, 0.5); */
-    box-shadow: 0px 0px 10px rgb(147, 143, 143);
+    transform: translateY(-50px);
 }
 
 .skill-card-section {
