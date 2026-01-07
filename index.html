@@ -15,49 +15,52 @@
 
 <body>
     <header>
-        <div class="ms-5 pt-4 pb-4 text-light ">
+        <div class="brand-logo text-light">
             <h3>IAMKSR</h3>
         </div>
-        <nav style="margin-right: 80px;">
-            <ul class="nav nav-underline ms-5 pt-4 pb-4 text-light">
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#home">Home</a>
+        <nav class="main-nav">
+            <ul class="nav-list text-light">
+                <li class="nav-itm">
+                    <a class="nav-lnk text-light" href="#hero">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#about">About</a>
+                <li class="nav-itm">
+                    <a class="nav-lnk text-light" href="#bio">About</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#skills">Skills</a>
+                <li class="nav-itm">
+                    <a class="nav-lnk text-light" href="#career">Journey</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#">Projects</a>
+                <li class="nav-itm">
+                    <a class="nav-lnk text-light" href="#tech">Skills</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#">Resume</a>
+                <li class="nav-itm">
+                    <a class="nav-lnk text-light" href="#portfolio">Projects</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#">Contact</a>
+                <li class="nav-itm">
+                    <a class="nav-lnk text-light" href="#cv">Resume</a>
+                </li>
+                <li class="nav-itm">
+                    <a class="nav-lnk text-light" href="#reach">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="home" id="home">
-            <div>
-                <div class="hello">
+        <section class="hero" id="hero">
+            <div class="hero-txt">
+                <div class="greeting">
                     Hello, I'm<br>
-                    <h1 class="karan">Karan Ram</h1>
+                    <h1 class="hero-name">Karan Ram</h1>
                 </div>
             </div>
-            <figure>
-                <img src="/assets/images/karan.jpeg" height="600px">
+            <figure class="hero-img">
+                <img src="/assets/images/karan.jpeg" alt="Karan Ram">
             </figure>
         </section>
 
-        <section class="about" id="about">
-            <div class="about-detail">
-                <div class="about-me">
+        <section class="bio-section" id="bio">
+            <div class="content-pad">
+                <div class="bio-block">
                     <h2>About Me</h2>
                     <p>
                         I'm an aspiring developer with a strong interest in software development and
@@ -67,31 +70,31 @@
                     </p>
                 </div>
             </div>
-            <section class="my-detail">
-                <aside class="card-section">
-                    <div class="card-frame">
-                        <div class="profile-card">
-                            <div class="card-header">
+            <section class="details-grid">
+                <aside class="profile-col">
+                    <div class="p-card-wrap">
+                        <div class="p-card">
+                            <div class="pc-head">
                                 <img src="/assets/images/karan-canvas.jpeg" width="160">
-                                <div class="card-name">Karan Ram</div>
-                                <div class="card-post">ML Developer</div>
+                                <div class="pc-name">Karan Ram</div>
+                                <div class="pc-role">ML Developer</div>
                             </div>
-                            <div class="card-info">
+                            <div class="pc-stats">
                                 <div>
-                                    <div class="card-data">37+</div>
-                                    <div class="card-data-name">Projects</div>
+                                    <div class="stat-num">37+</div>
+                                    <div class="stat-lbl">Projects</div>
                                 </div>
                                 <div>
-                                    <div class="card-data">3+</div>
-                                    <div class="card-data-name">Years</div>
+                                    <div class="stat-num">3+</div>
+                                    <div class="stat-lbl">Years</div>
                                 </div>
                                 <div>
-                                    <div class="card-data">4+</div>
-                                    <div class="card-data-name">Languages</div>
+                                    <div class="stat-num">4+</div>
+                                    <div class="stat-lbl">Languages</div>
                                 </div>
                             </div>
-                            <div class="card-footer">
-                                <div class="social-icons">
+                            <div class="pc-foot">
+                                <div class="socials">
                                     <a href="" class="bi bi-instagram"></a>
                                     <a href="" class="bi bi-linkedin"></a>
                                     <a href="" class="bi bi-twitter-x"></a>
@@ -101,11 +104,11 @@
                         </div>
                     </div>
                 </aside>
-                <div>
-                    <div>
-                        <span class="about-me-block">ABOUT ME</span>
+                <div class="bio-expanded">
+                    <div class="badge-wrap">
+                        <span class="lbl-badge">ABOUT ME</span>
                     </div>
-                    <div class="about-text">
+                    <div class="bio-txt">
                         <h2>Transforming Ideas into Digital Reality
                             <hr>
                         </h2>
@@ -134,9 +137,55 @@
             </section>
         </section>
 
-        <section class="skills" id="skills">
-            <div class="skills-detail">
-                <div class="skill-info">
+        <section class="career-section" id="career">
+            <div class="content-pad">
+                <h2>My Journey</h2>
+                <div class="career-path">
+                    <div class="career-node">
+                        <div class="node-dot"></div>
+                        <div class="node-content">
+                            <span class="node-date">2025 - 2029 (Present)</span>
+                            <h3 class="node-title">Bachelor of Technology (B.Tech) - Computer Science</h3>
+                            <div class="node-sub">PW Institute of Innovation, Bengaluru</div>
+                            <p class="node-desc">
+                                Pursuing a B.Tech in Computer Science, focusing on core computing concepts, programming,
+                                and modern tech stacks. Deepening knowledge in Full-Stack Development and AI/ML.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="career-node">
+                        <div class="node-dot"></div>
+                        <div class="node-content">
+                            <span class="node-date">2022 - 2024</span>
+                            <h3 class="node-title">Computer Science</h3>
+                            <div class="node-sub">J. H. Ambani School, Mumbai</div>
+                            <p class="node-desc">
+                                Completed higher secondary education with a focus on Computer Science.
+                                Developed foundational skills in coding, logic building (InfoGeniusAI), and project
+                                management.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="career-node">
+                        <div class="node-dot"></div>
+                        <div class="node-content">
+                            <span class="node-date">2021 - 2022</span>
+                            <h3 class="node-title">Secondary Education (10th)</h3>
+                            <div class="node-sub">High School, Mumbai</div>
+                            <p class="node-desc">
+                                Completed secondary education with a strong foundation in Mathematics and Science.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tech-section" id="tech">
+            <div class="content-pad">
+                <div class="tech-intro">
                     <h2>Skills</h2>
                     <p>
                         I am a continuously learning developer with a strong foundation in web development, particularly
@@ -146,80 +195,134 @@
                         technical work.
                     </p>
                 </div>
-            </div>
-            <div class="skill-card-section">
-                <div class="skill-card">
-                    <div class="skill-type">
-                        <h3>Frontend Development</h3>
-                        <p>
-                            Creating responsive, clean, and user-friendly interfaces using modern web standards.
-                        </p>
+                <div class="tech-grid">
+                    <div class="tech-box">
+                        <div class="tech-content">
+                            <h3>Frontend Development</h3>
+                            <p>
+                                Creating responsive, clean, and user-friendly interfaces using modern web standards.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="tech-box">
+                        <div class="tech-content">
+                            <h3>Backend Development</h3>
+                            <p>
+                                Building reliable server-side logic, APIs, and databases that power scalable web
+                                applications.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="tech-box">
+                        <div class="tech-content">
+                            <h3>Machine Learning</h3>
+                            <p>
+                                Learning to analyze data and build basic models to solve real-world problems.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="tech-box">
+                        <div class="tech-content">
+                            <h3>Web3 & Blockchain</h3>
+                            <p>
+                                Exploring decentralized technologies, smart contracts, and Web3 application concepts.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="tech-box">
+                        <div class="tech-content">
+                            <h3>Graphic Design</h3>
+                            <p>
+                                Designing visual elements and layouts that enhance digital experiences.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="tech-box">
+                        <div class="tech-content">
+                            <h3>Video Editing</h3>
+                            <p>
+                                Editing and refining video content with attention to flow, clarity, and visual appeal.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+
+        <section class="portfolio-section" id="portfolio">
+            <div class="content-pad">
+                <div class="portfolio-intro">
+                    <h2>Projects</h2>
+                    <p>Here are some of the key projects I've worked on, ranging from AI applications to web
+                        development.</p>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="work-card">
+                        <h3>AI Chatbot</h3>
+                        <p>Developed an interactive AI chatbot using OpenAI API, featuring natural language processing
+                            and real-time responses for enhanced user engagement.</p>
+                        <a href="#" class="git-link">View Repo</a>
+                    </div>
+
+                    <div class="work-card">
+                        <h3>Discord Bot</h3>
+                        <p>A custom server management bot built with Node.js, capable of automating tasks, moderation,
+                            and music playback to streamline community operations.</p>
+                        <a href="#" class="git-link">View Repo</a>
+                    </div>
+
+                    <div class="work-card">
+                        <h3>Portfolio Website</h3>
+                        <p>A personal portfolio site showcasing my skills and projects, built with semantic HTML and
+                            custom CSS for a unique, responsive dark theme.</p>
+                        <a href="#" class="git-link">View Repo</a>
+                    </div>
+
+                    <div class="work-card">
+                        <h3>Weather App</h3>
+                        <p>A robust weather application providing real-time forecasts and location-based data
+                            visualisation using external APIs and modern frontend techniques.</p>
+                        <a href="#" class="git-link">View Repo</a>
                     </div>
                 </div>
-
-                <div class="skill-card">
-                    <div class="skill-type">
-                        <h3>Backend Development</h3>
-                        <p>
-                            Building reliable server-side logic, APIs, and databases that power scalable web
-                            applications.
-                        </p>
-                    </div>
-                </div>
-
-
-                <div class="skill-card">
-                    <div class="skill-type">
-                        <h3>Machine Learning</h3>
-                        <p>
-                            Learning to analyze data and build basic models to solve real-world problems.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-type">
-                        <h3>Web3 & Blockchain</h3>
-                        <p>
-                            Exploring decentralized technologies, smart contracts, and Web3 application concepts.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-type">
-                        <h3>Graphic Design</h3>
-                        <p>
-                            Designing visual elements and layouts that enhance digital experiences.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-type">
-                        <h3>Video Editing</h3>
-                        <p>
-                            Editing and refining video content with attention to flow, clarity, and visual appeal.
-                        </p>
-                    </div>
-                </div>
-
             </div>
         </section>
 
-        <section class="projects" id="projects">
-            <div class="project-detail">
-                <div class="project-info">
-                   <h2>Projects</h2>
-                   <p>Some of my projects are shown below that I have worked upon in last 4 years. AI and Discord chatbot.</p>
+        <section class="cv-section" id="cv">
+            <div class="content-pad">
+                <h2>Resume</h2>
+                <p>Interested in my work? Download my resume to learn more about my experience and skills.</p>
+                <a href="#" class="cv-btn">Download Resume</a>
+            </div>
+        </section>
+
+        <section class="reach-section" id="reach">
+            <div class="content-pad">
+                <h2>Contact Me</h2>
+                <p>Have a project in mind or just want to say hi? Feel free to reach out!</p>
+                <div class="form-container">
+                    <form action="#" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" class="input-field" required>
+                        <input type="email" name="email" placeholder="Your Email" class="input-field" required>
+                        <textarea name="message" placeholder="Your Message" class="input-field msg-box"
+                            required></textarea>
+                        <button type="submit" class="send-btn">Send Message</button>
+                    </form>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <div style="margin-top: 100px; display: flex; justify-content: center; font-size: 40px;"><i>Still developing...</i>
-    </div>
+    <footer>
+        <p>&copy; 2024 Karan Ram. All rights reserved.</p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
