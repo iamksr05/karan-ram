@@ -266,6 +266,7 @@ footer {
     margin-top: 50px;
     display: grid;
     grid-template-columns: 4fr 8fr;
+    column-gap: 20px;
 }
 
 .profile-column {
@@ -323,30 +324,51 @@ footer {
     color: gray;
 }
 
+.tagline {
+    margin-top: 30px;
+    color: rgb(201, 197, 197);
+    transform: scale(1, 1);
+    transition: all 0.5s;
+}
+
+.tagline:hover{
+    color: white;
+    transform: scale(1.04, 1.04);
+    text-shadow: 10px;
+}
+
 .profile-footer {
-    display: flex;
-    justify-content: center;
+    justify-items: center;
 }
 
 .social-links {
-    width: 230px;
     display: flex;
-    justify-content: space-around;
-    font-size: 22px;
-    padding-top: 30px;
+    justify-content: center;
+    gap: 18px;
+    padding: 25px 0 10px;
 }
 
 .social-links a {
-    transition: all 0.3s ease;
-    display: inline-block;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    color: rgb(195, 190, 190);
+    font-size: 20px;
+    text-decoration: none;
+    transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
 }
 
-.social-links a:hover,
-.social-links a:visited,
-.social-links a:active {
-    color: white;
-    transform: translateY(-5px) rotate(10deg);
+
+.social-links a:hover {
+    transform: translateY(-4px);
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
 }
+
 
 .section-badge {
     padding: 8px 15px;
@@ -396,7 +418,7 @@ p {
     border-radius: 16px;
     text-align: center;
     overflow: hidden;
-    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+    transition: transform 0.1s ease, box-shadow 0.35s ease, border-color 0.35s ease;
     position: relative;
 }
 
