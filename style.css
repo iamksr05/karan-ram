@@ -447,7 +447,7 @@ p {
 }
 
 .skill-card:hover {
-    transform: translateY(-8px) scale(1.04);
+    transform: scale(1.05);
     border-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
 }
@@ -643,6 +643,39 @@ textarea.message-area {
     opacity: 1;
     transform: translateY(0);
 }
+
+
+.skills-grid .out-skill-card:nth-child(2),
+.projects-grid .out-project-card:nth-child(2) {
+    transition-delay: 0.1s;
+}
+
+.skills-grid .out-skill-card:nth-child(3),
+.projects-grid .out-project-card:nth-child(3) {
+    transition-delay: 0.2s;
+}
+
+.skills-grid .out-skill-card:nth-child(4),
+.projects-grid .out-project-card:nth-child(4) {
+    transition-delay: 0.3s;
+}
+
+.skills-grid .out-skill-card:nth-child(5) {
+    transition-delay: 0.4s;
+}
+
+.skills-grid .out-skill-card:nth-child(6) {
+    transition-delay: 0.5s;
+}
+
+.timeline-item:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.timeline-item:nth-child(3) {
+    transition-delay: 0.4s;
+}
+
 
 footer {
     text-align: center;
