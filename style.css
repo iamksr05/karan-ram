@@ -30,11 +30,11 @@ header h3 {
     letter-spacing: -0.5px;
 }
 
-.main-nav {
+.navbar {
     margin-right: 0;
 }
 
-.nav-list {
+.nav-menu {
     margin: 0;
     padding: 0;
     display: flex;
@@ -42,20 +42,22 @@ header h3 {
     list-style: none;
 }
 
-.nav-lnk {
+.nav-link {
     font-size: 15px;
     font-weight: 500;
     color: #a0a0a0 !important;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
 }
 
-.nav-lnk:hover,
-.nav-lnk.active {
+.nav-link:hover,
+.nav-link.active {
     color: #ffffff !important;
+    transform: scale(1.05);
 }
 
-.hero {
+.hero-section {
     display: flex;
     justify-content: space-around;
     min-height: calc(100vh - 100px);
@@ -63,12 +65,12 @@ header h3 {
     padding: 0 10%;
 }
 
-.hero>div:first-child {
+.hero-section>div:first-child {
     align-self: center;
     margin-bottom: 0;
 }
 
-.greeting {
+.hero-greeting {
     color: #888;
     font-size: 20px;
     font-weight: 500;
@@ -76,7 +78,7 @@ header h3 {
     display: block;
 }
 
-.hero-name {
+.name-highlight {
     color: #fff;
     font-size: 90px;
     font-weight: 800;
@@ -89,20 +91,38 @@ header h3 {
     -webkit-text-fill-color: transparent;
 }
 
-.bio-section {
+.hero-img img {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.about-section {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.content-pad {
+.section-container {
     padding: 120px 20px 40px;
     text-align: center;
 }
 
-.bio-block h2,
-.tech-intro h2,
-.portfolio-intro h2,
-.content-pad h2 {
+.about-intro h2,
+.skills-header h2,
+.projects-header h2,
+.section-container h2 {
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -113,20 +133,20 @@ header h3 {
     -webkit-text-fill-color: transparent;
 }
 
-.career-section {
+.journey-section {
     max-width: 1000px;
     margin: 0 auto;
     padding-bottom: 80px;
 }
 
-.career-path {
+.timeline-container {
     position: relative;
     max-width: 800px;
     margin: 40px auto 0;
     padding-left: 30px;
 }
 
-.career-path::before {
+.timeline-container::before {
     content: '';
     position: absolute;
     left: 0;
@@ -137,16 +157,16 @@ header h3 {
     border-radius: 2px;
 }
 
-.career-node {
+.timeline-item {
     position: relative;
     margin-bottom: 60px;
 }
 
-.career-node:last-child {
+.timeline-item:last-child {
     margin-bottom: 0;
 }
 
-.node-dot {
+.timeline-dot {
     position: absolute;
     left: -36px;
     top: 5px;
@@ -158,13 +178,13 @@ header h3 {
     transition: all 0.3s ease;
 }
 
-.career-node:hover .node-dot {
+.timeline-item:hover .timeline-dot {
     background-color: #fff;
     border-color: #fff;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
-.node-content {
+.timeline-content {
     background: linear-gradient(145deg, #111, #0a0a0a);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 16px;
@@ -173,13 +193,13 @@ header h3 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.career-node:hover .node-content {
+.timeline-item:hover .timeline-content {
     transform: translateX(10px);
     border-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-.node-date {
+.timeline-date {
     font-size: 14px;
     color: #888;
     margin-bottom: 8px;
@@ -189,36 +209,36 @@ header h3 {
     border-radius: 20px;
 }
 
-.node-title {
+.timeline-title {
     font-size: 22px;
     font-weight: 700;
     color: #fff;
     margin-bottom: 5px;
 }
 
-.node-sub {
+.timeline-subtitle {
     font-size: 16px;
     color: #bbb;
     margin-bottom: 12px;
     font-weight: 500;
 }
 
-.node-desc {
+.timeline-description {
     font-size: 14px;
     color: #888;
     line-height: 1.6;
 }
 
-.tech-box,
-.work-card {
+.skill-card,
+.project-card {
     background: #0f0f0f;
     background: linear-gradient(180deg, rgba(20, 20, 20, 0.8), rgba(10, 10, 10, 0.95));
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.tech-box:hover,
-.work-card:hover {
+.skill-card:hover,
+.project-card:hover {
     border-color: rgba(255, 255, 255, 0.15);
     transform: translateY(-5px);
 }
@@ -233,34 +253,34 @@ footer {
     margin-top: 50px;
 }
 
-.bio-block {
+.about-intro {
     padding: 30px;
 }
 
-.bio-block p {
+.about-intro p {
     line-height: 35px;
     color: rgb(206, 203, 203);
 }
 
-.details-grid {
+.about-grid {
     margin-top: 50px;
     display: grid;
     grid-template-columns: 4fr 8fr;
 }
 
-.profile-col {
+.profile-column {
     display: flex;
     justify-content: center;
 }
 
-.p-card-wrap {
+.profile-card-wrapper {
     padding: 30px;
     width: 380px;
     border-radius: 20px;
     background-color: rgb(31, 30, 30);
 }
 
-.p-card {
+.profile-card {
     width: 310px;
     background-color: rgb(31, 30, 30);
     color: white;
@@ -268,47 +288,47 @@ footer {
     text-align: center;
 }
 
-.pc-head {
+.profile-header {
     border-bottom: 1px solid rgb(0, 0, 0);
     padding: 0px 20px 10px 20px;
     font-weight: bold;
 }
 
-.pc-head img {
+.profile-header img {
     border-radius: 160px;
 }
 
-.pc-head .pc-name {
+.profile-header .profile-name {
     font-size: 30px;
     font-weight: bold;
     padding: 10px;
     color: rgb(216, 211, 211);
 }
 
-.pc-stats {
+.stats-box {
     border-bottom: 1px solid rgb(0, 0, 0);
     display: flex;
     justify-content: space-around;
     padding: 15px 10px;
 }
 
-.stat-num {
+.stat-number {
     font-size: 25px;
     font-weight: bold;
     text-align: center;
 }
 
-.stat-lbl {
+.stat-label {
     font-size: 16px;
     color: gray;
 }
 
-.pc-foot {
+.profile-footer {
     display: flex;
     justify-content: center;
 }
 
-.socials {
+.social-links {
     width: 230px;
     display: flex;
     justify-content: space-around;
@@ -316,13 +336,19 @@ footer {
     padding-top: 30px;
 }
 
-.socials a:hover,
-.socials a:visited,
-.socials a:active {
-    color: white;
+.social-links a {
+    transition: all 0.3s ease;
+    display: inline-block;
 }
 
-.lbl-badge {
+.social-links a:hover,
+.social-links a:visited,
+.social-links a:active {
+    color: white;
+    transform: translateY(-5px) rotate(10deg);
+}
+
+.section-badge {
     padding: 8px 15px;
     border-radius: 20px;
     font-size: 14px;
@@ -330,21 +356,21 @@ footer {
     background-color: rgb(31, 30, 30);
 }
 
-.bio-txt {
+.about-text-content {
     margin-top: 20px;
 }
 
-.bio-txt p {
+.about-text-content p {
     color: rgb(206, 203, 203);
 }
 
-.tech-section {
+.skills-section {
     max-width: 1300px;
     width: 100%;
     margin: 0 auto;
 }
 
-.tech-grid {
+.skills-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
@@ -354,7 +380,7 @@ footer {
     padding: 0 100px;
 }
 
-.tech-intro {
+.skills-header {
     padding: 30px;
 }
 
@@ -363,7 +389,7 @@ p {
     color: rgb(206, 203, 203);
 }
 
-.tech-box {
+.skill-card {
     width: 300px;
     height: 90px;
     padding: 22px;
@@ -374,14 +400,14 @@ p {
     position: relative;
 }
 
-.tech-box h3 {
+.skill-card h3 {
     margin-top: 8px;
     font-weight: 600;
     font-size: 22px;
     transition: transform 0.35s ease, opacity 0.35s ease;
 }
 
-.tech-box p {
+.skill-card p {
     font-size: 14px;
     line-height: 24px;
     opacity: 0;
@@ -389,7 +415,7 @@ p {
     transition: opacity 0.35s ease, transform 0.35s ease;
 }
 
-.tech-box::before {
+.skill-card::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -398,37 +424,37 @@ p {
     transition: opacity 0.35s ease;
 }
 
-.tech-box:hover {
+.skill-card:hover {
     transform: translateY(-8px) scale(1.04);
     border-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
 }
 
-.tech-box:hover::before {
+.skill-card:hover::before {
     opacity: 1;
 }
 
-.tech-box:hover h3 {
+.skill-card:hover h3 {
     transform: translateY(-60px);
     opacity: 0.85;
 }
 
-.tech-box:hover p {
+.skill-card:hover p {
     opacity: 1;
     transform: translateY(-55px);
 }
 
-.portfolio-section {
+.projects-section {
     max-width: 1300px;
     width: 100%;
     margin: 0 auto;
 }
 
-.portfolio-intro {
+.projects-header {
     padding: 30px;
 }
 
-.portfolio-grid {
+.projects-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
@@ -437,7 +463,7 @@ p {
     padding: 0 100px;
 }
 
-.work-card {
+.project-card {
     width: 450px;
     height: 250px;
     padding: 30px;
@@ -452,7 +478,7 @@ p {
     align-items: center;
 }
 
-.work-card::before {
+.project-card::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -461,30 +487,30 @@ p {
     transition: opacity 0.35s ease;
 }
 
-.work-card:hover {
+.project-card:hover {
     transform: translateY(-8px) scale(1.02);
     border-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
 }
 
-.work-card:hover::before {
+.project-card:hover::before {
     opacity: 1;
 }
 
-.work-card h3 {
+.project-card h3 {
     font-size: 26px;
     font-weight: 600;
     margin-bottom: 15px;
     color: white;
 }
 
-.work-card p {
+.project-card p {
     font-size: 15px;
     line-height: 24px;
     color: rgb(206, 203, 203);
 }
 
-.git-link {
+.repo-link {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 24px;
@@ -498,24 +524,24 @@ p {
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.work-card:hover .git-link {
+.project-card:hover .repo-link {
     opacity: 1;
     transform: translateY(0);
 }
 
-.git-link:hover {
+.repo-link:hover {
     background: #e0e0e0;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 }
 
-.cv-section,
-.reach-section {
+.resume-section,
+.contact-section {
     max-width: 1300px;
     width: 100%;
     margin: 0 auto;
 }
 
-.cv-btn {
+.resume-button {
     display: inline-block;
     padding: 15px 50px;
     background-color: rgb(31, 30, 30);
@@ -529,14 +555,14 @@ p {
     margin-top: 30px;
 }
 
-.cv-btn:hover {
+.resume-button:hover {
     background-color: white;
     color: black;
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
     transform: translateY(-3px);
 }
 
-.form-container {
+.contact-form-wrapper {
     max-width: 600px;
     margin: 40px auto 0;
     padding: 40px;
@@ -545,7 +571,7 @@ p {
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.input-field {
+.form-input {
     width: 100%;
     padding: 15px 20px;
     margin-bottom: 20px;
@@ -557,17 +583,17 @@ p {
     transition: border-color 0.3s ease;
 }
 
-.input-field:focus {
+.form-input:focus {
     outline: none;
     border-color: rgba(255, 255, 255, 0.5);
 }
 
-textarea.msg-box {
+textarea.message-area {
     resize: vertical;
     min-height: 120px;
 }
 
-.send-btn {
+.submit-button {
     padding: 12px 40px;
     background-color: white;
     color: black;
@@ -580,9 +606,51 @@ textarea.msg-box {
     margin-top: 10px;
 }
 
-.send-btn:hover {
+.submit-button:hover {
     transform: scale(1.05);
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.skills-grid .skill-card:nth-child(2),
+.projects-grid .project-card:nth-child(2) {
+    transition-delay: 0.1s;
+}
+
+.skills-grid .skill-card:nth-child(3),
+.projects-grid .project-card:nth-child(3) {
+    transition-delay: 0.2s;
+}
+
+.skills-grid .skill-card:nth-child(4),
+.projects-grid .project-card:nth-child(4) {
+    transition-delay: 0.3s;
+}
+
+.skills-grid .skill-card:nth-child(5) {
+    transition-delay: 0.4s;
+}
+
+.skills-grid .skill-card:nth-child(6) {
+    transition-delay: 0.5s;
+}
+
+.timeline-item:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.timeline-item:nth-child(3) {
+    transition-delay: 0.4s;
 }
 
 footer {

@@ -15,42 +15,42 @@
 
 <body>
     <header>
-        <div class="brand-logo text-light">
+        <div class="logo-container text-light">
             <h3>IAMKSR</h3>
         </div>
-        <nav class="main-nav">
-            <ul class="nav-list text-light">
-                <li class="nav-itm">
-                    <a class="nav-lnk text-light" href="#hero">Home</a>
+        <nav class="navbar">
+            <ul class="nav-menu text-light">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#hero">Home</a>
                 </li>
-                <li class="nav-itm">
-                    <a class="nav-lnk text-light" href="#bio">About</a>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#about">About</a>
                 </li>
-                <li class="nav-itm">
-                    <a class="nav-lnk text-light" href="#career">Journey</a>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#journey">Journey</a>
                 </li>
-                <li class="nav-itm">
-                    <a class="nav-lnk text-light" href="#tech">Skills</a>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#skills">Skills</a>
                 </li>
-                <li class="nav-itm">
-                    <a class="nav-lnk text-light" href="#portfolio">Projects</a>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#projects">Projects</a>
                 </li>
-                <li class="nav-itm">
-                    <a class="nav-lnk text-light" href="#cv">Resume</a>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#resume">Resume</a>
                 </li>
-                <li class="nav-itm">
-                    <a class="nav-lnk text-light" href="#reach">Contact</a>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero" id="hero">
-            <div class="hero-txt">
-                <div class="greeting">
+        <section class="hero-section" id="hero">
+            <div class="hero-content">
+                <div class="hero-greeting">
                     Hello, I'm<br>
-                    <h1 class="hero-name">Karan Ram</h1>
+                    <h1 class="name-highlight">Karan Ram</h1>
                 </div>
             </div>
             <figure class="hero-img">
@@ -58,9 +58,9 @@
             </figure>
         </section>
 
-        <section class="bio-section" id="bio">
-            <div class="content-pad">
-                <div class="bio-block">
+        <section class="about-section" id="about">
+            <div class="section-container">
+                <div class="about-intro reveal">
                     <h2>About Me</h2>
                     <p>
                         I'm an aspiring developer with a strong interest in software development and
@@ -70,31 +70,31 @@
                     </p>
                 </div>
             </div>
-            <section class="details-grid">
-                <aside class="profile-col">
-                    <div class="p-card-wrap">
-                        <div class="p-card">
-                            <div class="pc-head">
+            <section class="about-grid">
+                <aside class="profile-column">
+                    <div class="profile-card-wrapper reveal">
+                        <div class="profile-card">
+                            <div class="profile-header">
                                 <img src="/assets/images/karan-canvas.jpeg" width="160">
-                                <div class="pc-name">Karan Ram</div>
-                                <div class="pc-role">ML Developer</div>
+                                <div class="profile-name">Karan Ram</div>
+                                <div class="profile-role">ML Developer</div>
                             </div>
-                            <div class="pc-stats">
+                            <div class="stats-box">
                                 <div>
-                                    <div class="stat-num">37+</div>
-                                    <div class="stat-lbl">Projects</div>
+                                    <div class="stat-number">37+</div>
+                                    <div class="stat-label">Projects</div>
                                 </div>
                                 <div>
-                                    <div class="stat-num">3+</div>
-                                    <div class="stat-lbl">Years</div>
+                                    <div class="stat-number">3+</div>
+                                    <div class="stat-label">Years</div>
                                 </div>
                                 <div>
-                                    <div class="stat-num">4+</div>
-                                    <div class="stat-lbl">Languages</div>
+                                    <div class="stat-number">4+</div>
+                                    <div class="stat-label">Languages</div>
                                 </div>
                             </div>
-                            <div class="pc-foot">
-                                <div class="socials">
+                            <div class="profile-footer">
+                                <div class="social-links">
                                     <a href="" class="bi bi-instagram"></a>
                                     <a href="" class="bi bi-linkedin"></a>
                                     <a href="" class="bi bi-twitter-x"></a>
@@ -104,11 +104,11 @@
                         </div>
                     </div>
                 </aside>
-                <div class="bio-expanded">
-                    <div class="badge-wrap">
-                        <span class="lbl-badge">ABOUT ME</span>
+                <div class="about-detail-column reveal">
+                    <div class="badge-container">
+                        <span class="section-badge">ABOUT ME</span>
                     </div>
-                    <div class="bio-txt">
+                    <div class="about-text-content">
                         <h2>Transforming Ideas into Digital Reality
                             <hr>
                         </h2>
@@ -137,44 +137,45 @@
             </section>
         </section>
 
-        <section class="career-section" id="career">
-            <div class="content-pad">
+        <section class="journey-section" id="journey">
+            <div class="section-container">
                 <h2>My Journey</h2>
-                <div class="career-path">
-                    <div class="career-node">
-                        <div class="node-dot"></div>
-                        <div class="node-content">
-                            <span class="node-date">2025 - 2029 (Present)</span>
-                            <h3 class="node-title">Bachelor of Technology (B.Tech) - Computer Science</h3>
-                            <div class="node-sub">PW Institute of Innovation</div>
-                            <p class="node-desc">
+                <div class="timeline-container">
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2025 - 2029 (Present)</span>
+                            <h3 class="timeline-title">Bachelor of Technology (B.Tech) - Computer Science</h3>
+                            <div class="timeline-subtitle">PW Institute of Innovation</div>
+                            <p class="timeline-description">
                                 Pursuing a B.Tech in Computer Science, focusing on core computing concepts, programming,
                                 and modern tech stacks. Deepening knowledge in Full-Stack Development and AI/ML.
                             </p>
                         </div>
                     </div>
 
-                    <div class="career-node">
-                        <div class="node-dot"></div>
-                        <div class="node-content">
-                            <span class="node-date">2022 - 2024</span>
-                            <h3 class="node-title">Computer Science</h3>
-                            <div class="node-sub">J.H. Ambani School</div>
-                            <p class="node-desc">
-                                Completed higher secondary education in J.H Ambani School Mumbai with a focus on Computer Science.
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2022 - 2024</span>
+                            <h3 class="timeline-title">Computer Science</h3>
+                            <div class="timeline-subtitle">J.H. Ambani School</div>
+                            <p class="timeline-description">
+                                Completed higher secondary education at J.H Ambani School Mumbai with a focus on
+                                Computer Science.
                                 Developed foundational skills in coding, logic building (InfoGeniusAI), and project
                                 management.
                             </p>
                         </div>
                     </div>
 
-                    <div class="career-node">
-                        <div class="node-dot"></div>
-                        <div class="node-content">
-                            <span class="node-date">2021 - 2022</span>
-                            <h3 class="node-title">Secondary Education (10th)</h3>
-                            <div class="node-sub">P.R.I.A School</div>
-                            <p class="node-desc">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2021 - 2022</span>
+                            <h3 class="timeline-title">Secondary Education (10th)</h3>
+                            <div class="timeline-subtitle">P.R.I.A School</div>
+                            <p class="timeline-description">
                                 Completed secondary education with a strong foundation in Mathematics and Science.
                             </p>
                         </div>
@@ -183,9 +184,9 @@
             </div>
         </section>
 
-        <section class="tech-section" id="tech">
-            <div class="content-pad">
-                <div class="tech-intro">
+        <section class="skills-section" id="skills">
+            <div class="section-container">
+                <div class="skills-header reveal">
                     <h2>Skills</h2>
                     <p>
                         I am a continuously learning developer with a strong foundation in web development, particularly
@@ -195,9 +196,9 @@
                         technical work.
                     </p>
                 </div>
-                <div class="tech-grid">
-                    <div class="tech-box">
-                        <div class="tech-content">
+                <div class="skills-grid">
+                    <div class="skill-card reveal">
+                        <div class="skill-content">
                             <h3>Frontend Development</h3>
                             <p>
                                 Creating responsive, clean, and user-friendly interfaces using modern web standards.
@@ -205,8 +206,8 @@
                         </div>
                     </div>
 
-                    <div class="tech-box">
-                        <div class="tech-content">
+                    <div class="skill-card">
+                        <div class="skill-content">
                             <h3>Backend Development</h3>
                             <p>
                                 Building reliable server-side logic, APIs, and databases that power scalable web
@@ -216,8 +217,8 @@
                     </div>
 
 
-                    <div class="tech-box">
-                        <div class="tech-content">
+                    <div class="skill-card">
+                        <div class="skill-content">
                             <h3>Machine Learning</h3>
                             <p>
                                 Learning to analyze data and build basic models to solve real-world problems.
@@ -225,8 +226,8 @@
                         </div>
                     </div>
 
-                    <div class="tech-box">
-                        <div class="tech-content">
+                    <div class="skill-card">
+                        <div class="skill-content">
                             <h3>Web3 & Blockchain</h3>
                             <p>
                                 Exploring decentralized technologies, smart contracts, and Web3 application concepts.
@@ -234,8 +235,8 @@
                         </div>
                     </div>
 
-                    <div class="tech-box">
-                        <div class="tech-content">
+                    <div class="skill-card">
+                        <div class="skill-content">
                             <h3>Graphic Design</h3>
                             <p>
                                 Designing visual elements and layouts that enhance digital experiences.
@@ -243,8 +244,8 @@
                         </div>
                     </div>
 
-                    <div class="tech-box">
-                        <div class="tech-content">
+                    <div class="skill-card">
+                        <div class="skill-content">
                             <h3>Video Editing</h3>
                             <p>
                                 Editing and refining video content with attention to flow, clarity, and visual appeal.
@@ -255,62 +256,65 @@
                 </div>
         </section>
 
-        <section class="portfolio-section" id="portfolio">
-            <div class="content-pad">
-                <div class="portfolio-intro">
+        <section class="projects-section" id="projects">
+            <div class="section-container">
+                <div class="projects-header reveal">
                     <h2>Projects</h2>
                     <p>Here are some of the key projects I've worked on, ranging from AI applications to web
                         development.</p>
                 </div>
-                <div class="portfolio-grid">
-                    <div class="work-card">
+                <div class="projects-grid">
+                    <div class="project-card reveal">
                         <h3>InfoGeniusAI</h3>
                         <p>Developed an interactive AI chatbot using OpenAI API, featuring natural language processing
                             and real-time responses for enhanced user engagement.</p>
-                        <a href="https://github.com/iamksr05/InfoGeniusAI" class="git-link">View Repo</a>
+                        <a href="https://github.com/iamksr05/InfoGeniusAI" class="repo-link">View Repo</a>
                     </div>
 
-                    <div class="work-card">
+                    <div class="project-card">
                         <h3>The Entirety Bot</h3>
                         <p>A custom server management bot built with Node.js, capable of automating tasks, moderation,
                             and music playback to streamline community operations.</p>
-                        <a href="https://github.com/iamksr05/TheEntiretyBot" class="git-link">View Repo</a>
+                        <a href="https://github.com/iamksr05/TheEntiretyBot" class="repo-link">View Repo</a>
                     </div>
 
-                    <div class="work-card">
+                    <div class="project-card">
                         <h3>AI Image Generator</h3>
-                        <p>This project is an AI image generator that transforms text prompts into images. It started as an experiment and became a deep dive into generative AI, model behavior, and creative constraints.</p>
-                        <a href="https://github.com/iamksr05/Image-Gen" class="git-link">View Repo</a>
+                        <p>This project is an AI image generator that transforms text prompts into images. It started as
+                            an experiment and became a deep dive into generative AI, model behavior, and creative
+                            constraints.</p>
+                        <a href="https://github.com/iamksr05/Image-Gen" class="repo-link">View Repo</a>
                     </div>
 
-                    <div class="work-card">
+                    <div class="project-card">
                         <h3>Cheating Website</h3>
-                        <p>Ironically, this project was built to help me cheat in an exam where I was supposed to code—so I ended up coding under exam pressure anyway.</p>
-                        <a href="https://github.com/iamksr05/kr-files" class="git-link">View Repo</a>
+                        <p>Ironically, this project was built to help me cheat in an exam where I was supposed to
+                            code—so I ended up coding under exam pressure anyway.</p>
+                        <a href="https://github.com/iamksr05/kr-files" class="repo-link">View Repo</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="cv-section" id="cv">
-            <div class="content-pad">
+        <section class="resume-section" id="resume">
+            <div class="section-container">
                 <h2>Resume</h2>
                 <p>Interested in my work? Download my resume to learn more about my experience and skills.</p>
-                <a href="#" class="cv-btn">Download Resume</a>
+                <a href="#" class="resume-button">Download Resume</a>
             </div>
         </section>
 
-        <section class="reach-section" id="reach">
-            <div class="content-pad">
+        <section class="contact-section" id="contact">
+            <div class="section-container">
                 <h2>Contact Me</h2>
                 <p>Have a project in mind or just want to say hi? Feel free to reach out!</p>
-                <div class="form-container">
+                <div class="contact-form-wrapper reveal">
                     <form action="#" method="POST">
-                        <input type="text" name="name" placeholder="Your Name" class="input-field" required>
-                        <input type="email" name="email" placeholder="Your Email" class="input-field" required>
-                        <textarea name="message" placeholder="Your Message" class="input-field msg-box"
+                        <input type="text" name="name" placeholder="Your Name" class="form-input" required>
+                        <input type="email" name="email" placeholder="Your Email" class="form-input" required>
+                        <textarea name="message" placeholder="Your Message" class="form-input message-area"
                             required></textarea>
-                        <button type="submit" class="send-btn">Send Message</button>
+                        <button type="submit" class="submit-button">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -322,6 +326,19 @@
         <p>&copy; 2024 Karan Ram. All rights reserved.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        });
+
+        const hiddenElements = document.querySelectorAll('.reveal');
+        hiddenElements.forEach((el) => observer.observe(el));
+    </script>
 </body>
 
 </html>
