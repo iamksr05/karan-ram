@@ -331,7 +331,7 @@ footer {
     transition: all 0.5s;
 }
 
-.tagline:hover{
+.tagline:hover {
     color: white;
     transform: scale(1.04, 1.04);
     text-shadow: 10px;
@@ -642,37 +642,6 @@ textarea.message-area {
 .reveal.active {
     opacity: 1;
     transform: translateY(0);
-}
-
-.skills-grid .skill-card:nth-child(2),
-.projects-grid .project-card:nth-child(2) {
-    transition-delay: 0.1s;
-}
-
-.skills-grid .skill-card:nth-child(3),
-.projects-grid .project-card:nth-child(3) {
-    transition-delay: 0.2s;
-}
-
-.skills-grid .skill-card:nth-child(4),
-.projects-grid .project-card:nth-child(4) {
-    transition-delay: 0.3s;
-}
-
-.skills-grid .skill-card:nth-child(5) {
-    transition-delay: 0.4s;
-}
-
-.skills-grid .skill-card:nth-child(6) {
-    transition-delay: 0.5s;
-}
-
-.timeline-item:nth-child(2) {
-    transition-delay: 0.2s;
-}
-
-.timeline-item:nth-child(3) {
-    transition-delay: 0.4s;
 }
 
 footer {
