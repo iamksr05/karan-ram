@@ -19,8 +19,7 @@ This portfolio highlights selected projects, technical skills, and my academic j
 
 - HTML5
 - CSS3
-- JavaScript (Vanilla)
-- Bootstrap 5
+- JavaScript
 
 ## Highlights
 
