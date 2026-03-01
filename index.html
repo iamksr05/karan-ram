@@ -5,12 +5,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Portfolio of Karan Ram, a web developer focusing on backend development, frontend interfaces, and emerging technologies like machine learning and Web3.">
-    <title>Karan Ram</title>
-    <link rel="icon" href="assets/images/karan-canvas.png" type="image/png">
+        content="I'm Karan Ram, a Full-Stack Developer and Computer Science student building scalable web applications, AI-powered tools, and real-world software projects. Explore my work, skills, and development journey.">
+    <meta name="author" content="Karan Ram">
+    <meta property="og:site_name" content="Karan Ram">
+    <meta property="og:title" content="Karan Ram | Full-Stack Developer • AI & Web Projects">
+    <meta property="og:description"
+        content="I'm Karan Ram, a Full-Stack Developer and Computer Science student building scalable web applications, AI-powered tools, and real-world software projects. Explore my work, skills, and development journey.">
+    <meta property="og:image" content="https://karanram.netlify.com/assets/images/karan-canvas.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://karanram.netlify.com/">
+    <meta name="theme-color" content="#000000">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://karanram.netlify.com/">
+    <title>Karan Ram | Full-Stack Developer • AI & Web Projects</title>
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Karan Ram",
+  "url": "https://karanram.netlify.com/",
+  "image": "https://karanram.netlify.com/assets/images/karan-canvas.png",
+  "jobTitle": "Full-Stack Developer",
+  "sameAs": [
+    "https://github.com/iamksr05",
+    "https://www.linkedin.com/in/iamksr05"
+  ]
+}
+</script>
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Karan Ram | Full-Stack Developer • AI & Web Projects">
+    <meta name="twitter:description"
+        content="I'm Karan Ram, a Full-Stack Developer building web applications and AI-powered tools.">
+    <meta name="twitter:image" content="https://karanram.netlify.app/assets/images/karan-canvas.png">
+
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/images/karan-canvas.png">
+    <link rel="apple-touch-icon" href="assets/images/karan-canvas.png">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/style.css?v=1">
+    <link rel="stylesheet" href="style.css?v=1">
+
+
+    <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "ItemList",
+ "itemListElement": [
+   {
+     "@type": "SiteNavigationElement",
+     "position": 1,
+     "name": "About",
+     "url": "https://karanram.netlify.com/#about"
+   },
+   {
+     "@type": "SiteNavigationElement",
+     "position": 2,
+     "name": "Projects",
+     "url": "https://karanram.netlify.com/#projects"
+   },
+   {
+     "@type": "SiteNavigationElement",
+     "position": 3,
+     "name": "Skills",
+     "url": "https://karanram.netlify.com/#skills"
+   },
+   {
+     "@type": "SiteNavigationElement",
+     "position": 4,
+     "name": "Contact",
+     "url": "https://karanram.netlify.com/#contact"
+   }
+ ]
+}
+</script>
 </head>
 
 <body>
@@ -28,25 +97,25 @@
         <nav class="navbar">
             <ul class="nav-menu text-light">
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="#hero">Home</a>
+                    <a class="nav-link text-light" href="/#hero">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="#about">About</a>
+                    <a class="nav-link text-light" href="/#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="#journey">Journey</a>
+                    <a class="nav-link text-light" href="/#journey">Journey</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="#skills">Skills</a>
+                    <a class="nav-link text-light" href="/#skills">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="#projects">Projects</a>
+                    <a class="nav-link text-light" href="/#projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="#resume">Resume</a>
+                    <a class="nav-link text-light" href="/#resume">Resume</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="#contact">Contact</a>
+                    <a class="nav-link text-light" href="/#contact">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -57,17 +126,15 @@
             <div class="hero-content">
                 <div class="hero-greeting">
                     Hello, I'm<br>
-                    <h1>
-                        <figcaption class="name-highlight">Karan Ram</figcaption>
-                    </h1>
+                    <h1 class="name-highlight">Karan Ram</h1>
                 </div>
             </div>
             <figure class="hero-img">
-                <img src="/assets/images/karan.jpeg" alt="Karan Ram">
+                <img src="assets/images/karan.jpeg" alt="Karan Ram">
             </figure>
         </section>
 
-        <section class="about-section" id="about">
+        <section class="about-section" id="about" aria-label="About">
             <div class="section-container">
                 <div class="about-intro reveal">
                     <h2>About Me</h2>
@@ -79,12 +146,12 @@
                     </p>
                 </div>
             </div>
-            <section class="about-grid">
+            <div class="about-grid">
                 <aside class="profile-column">
                     <div class="profile-card-wrapper reveal">
                         <div class="profile-card">
                             <div class="profile-header">
-                                <img src="/assets/images/karan-canvas.png" width="160">
+                                <img src="assets/images/karan-canvas.png" width="160" alt="Karan Ram profile image">
                                 <div class="profile-name">Karan Ram</div>
                                 <div class="profile-role">ML Developer</div>
                             </div>
@@ -149,10 +216,10 @@
                         </p>
                     </div>
                 </div>
-            </section>
+            </div>
         </section>
 
-        <section class="journey-section" id="journey">
+        <section class="journey-section" id="journey" aria-label="Journey">
             <div class="section-container">
                 <h2>My Journey</h2>
                 <div class="timeline-container">
@@ -199,7 +266,7 @@
             </div>
         </section>
 
-        <section class="skills-section" id="skills">
+        <section class="skills-section" id="skills" aria-label="Skills">
             <div class="section-container">
                 <div class="skills-header reveal">
                     <h2>Skills</h2>
@@ -282,9 +349,10 @@
                     </div>
 
                 </div>
+            </div>
         </section>
 
-        <section class="projects-section" id="projects">
+        <section class="projects-section" id="projects" aria-label="Projects">
             <div class="section-container">
                 <div class="projects-header reveal">
                     <h2>Projects</h2>
@@ -328,9 +396,9 @@
 
                     <div class="out-project-card reveal">
                         <div class="project-card">
-                            <h3>Cheating Website</h3>
-                            <p>Ironically, this project was built to help me cheat in an exam where I was supposed to
-                                code—so I ended up coding under exam pressure anyway.</p>
+                            <h3>Exam Code Assistant</h3>
+                            <p>An innovative tool developed under high pressure to streamline code retrieval and
+                                organization during coding assessments.</p>
                             <a href="https://github.com/iamksr05/kr-files" class="repo-link" target="_blank">View
                                 Repo</a>
                         </div>
@@ -339,15 +407,16 @@
             </div>
         </section>
 
-        <section class="resume-section" id="resume">
+        <section class="resume-section" id="resume" aria-label="Resume">
             <div class="section-container">
                 <h2>Resume</h2>
                 <p>Interested in my work? Download my resume to learn more about my experience and skills.</p>
-                <a href="assets/images/Resume.png" download="karan_resume" class="resume-button">Download Resume</a>
+                <a href="assets/images/Resume.png" download="karan_resume" rel="nofollow" class="resume-button">Download
+                    Resume</a>
             </div>
         </section>
 
-        <section class="contact-section" id="contact">
+        <section class="contact-section" id="contact" aria-label="Contact">
             <div class="section-container">
                 <h2>Contact Me</h2>
                 <p>Have a project in mind or just want to say hi? Feel free to reach out!</p>
