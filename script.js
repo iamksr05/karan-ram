@@ -44,8 +44,9 @@ if (contactForm) {
         formStatus.textContent = 'Sending message...';
         formStatus.style.color = 'white';
 
+        const API_URL = 'https://karan-ram-oyur.onrender.com/api/contact';
         try {
-            const response = await fetch('http://localhost:5002/api/contact', {
+            const response = await fetch(API_URL, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -57,16 +58,16 @@ if (contactForm) {
 
             if (response.ok) {
                 formStatus.textContent = result.message || 'Message sent successfully!';
-                formStatus.style.color = '#d2e4e7ff'; // Green
+                formStatus.style.color = '#d2e4e7ff';
                 contactForm.reset();
             } else {
                 formStatus.textContent = result.error || 'Server is busy, please try again later.';
-                formStatus.style.color = '#dc3545'; // Red
+                formStatus.style.color = '#dc3545';
             }
         } catch (error) {
             console.error('Error submitting form:', error);
             formStatus.textContent = 'Something went wrone while connecting to server, please try again later.';
-            formStatus.style.color = '#dc3545'; // Red
+            formStatus.style.color = '#dc3545';
         }
     });
 }
